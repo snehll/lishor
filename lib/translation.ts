@@ -11,24 +11,26 @@ const translations = {
     About: {
       title: "Who We Are",
       paragraph1: {
+        title: "Lyschor Real Estate LLC",
         part1:
-          "Lyschor Real Estate LLC is a fully licensed UAE real estate brokerage operating under",
-        buyingSelling: "Buying & Selling Brokerage",
+          "Licensed UAE Real Estate Brokerage. Legal RUB-Payment Service, Trusted guidance for ",
+        buyingSelling: "Buying, Selling ",
         and: "and",
-        leasing: "Leasing Property Brokerage",
-        activities: "activities",
+        leasing: "Leasing Property ",
+        activities: "in Dubai",
       },
       paragraph2: {
-        part1: "We are a proud division of",
-        group: "Lyschor Group",
-        experience: "18+ years of international experience",
-        offices: "offices in Dubai, Moscow and Saint Petersburg",
-        team: "multilingual team",
-        expertise: "and expertise in cross-border transactions",
+        part1: "Lyschor Real Estate LLC ",
+        group: " Lyschor Group ",
+        experience: "is a fully lincensed UAE brokerage and a division of",
+        offices: " an international holding with 18+ years of experience. ",
       },
       offices: {
         dubai: { title: "Dubai Office", status: "Coming Soon" },
-        moscowSpb: { title: "Moscow & SPb", status: "Representative Offices" },
+        moscowSpb: {
+          title: "Moscow & Saint Petersburg",
+          status: "Representative Offices",
+        },
       },
     },
     Contact: {
@@ -76,8 +78,7 @@ const translations = {
       },
     },
     FreelanceBanner: {
-      title:
-        "Earn 100% Commission from Any Transaction\n+ 0.2% Bonus on Every Deal",
+      title: "Patner program benefits 100% of your commision",
       subtitle: "+ 0.2% Bonus on Every Deal",
       description:
         "Exclusive program for experienced freelance brokers serving Russian-speaking clients in Dubai",
@@ -123,8 +124,10 @@ const translations = {
       howItWorks: {
         title: "How It Works",
         step1: "Buyer transfers RUB from personal Russian bank account",
-        step2: "Funds received under Agency/Escrow agreement",
-        step3: "We pay developer or seller in AED using standard UAE methods",
+        step2:
+          "Funds are received legally under an Agency or Escrow Agreement.",
+        step3:
+          "We transfer AED to the developer or seller via UAE banking channels.",
       },
       advantages: {
         title: "Advantages",
@@ -197,11 +200,11 @@ const translations = {
     },
     FreelanceBrokers: {
       hero: {
-        title: "Earn 100% Commission",
-        subtitle: "+ 0.2% Bonus",
-        description:
-          "The most generous partner program for freelance brokers in Dubai",
         cta: "Become a Partner Today",
+        title: "Patner program benefits 100% of your commision",
+        subtitle: "",
+        description:
+          "Exclusive program for experienced freelance brokers serving Russian-speaking clients in Dubai",
       },
       conditions: {
         title: "Program Conditions",
@@ -304,24 +307,27 @@ const translations = {
     About: {
       title: "Кто мы",
       paragraph1: {
+        title: "Lyschor Real Estate LLC",
         part1:
-          "Lyschor Real Estate LLC — полностью лицензированное агентство недвижимости ОАЭ, работающее по направлениям",
-        buyingSelling: "Покупка и продажа недвижимости",
-        and: "и",
-        leasing: "Аренда недвижимости",
-        activities: "",
+          "Лицензированное агентство недвижимости ОАЭ. Легальный сервис оплаты в рублях. Надёжное сопровождение при ",
+        buyingSelling: "покупке, продаже ",
+        and: "и ",
+        leasing: "аренде недвижимости ",
+        activities: "в Дубае",
       },
       paragraph2: {
-        part1: "Мы — гордое подразделение",
-        group: "Lyschor Group",
-        experience: "более 18 лет международного опыта",
-        offices: "офисы в Дубае, Москве и Санкт-Петербурге",
-        team: "многоязычная команда",
-        expertise: "и экспертиза в трансграничных сделках",
+        part1: "Lyschor Real Estate LLC — ",
+        group: " Lyschor Group, ",
+        experience:
+          "это полностью лицензированное агентство ОАЭ и часть международного холдинга",
+        offices: " с опытом работы более 18 лет.",
       },
       offices: {
-        dubai: { title: "Офис в Дубае", status: "Скоро открытие" },
-        moscowSpb: { title: "Москва и СПб", status: "Представительства" },
+        dubai: { title: "Офис в Дубае", status: "Открытие скоро" },
+        moscowSpb: {
+          title: "Москва и Санкт-Петербург",
+          status: "Представительства",
+        },
       },
     },
     Contact: {
@@ -369,12 +375,11 @@ const translations = {
       },
     },
     FreelanceBanner: {
-      title:
-        "Зарабатывайте 100% комиссии от любой сделки\n+ 0.2% бонус за каждую сделку",
-      subtitle: "+ 0.2% бонус за каждую сделку",
+      cta: "Стать партнёром → Зарабатывать больше",
+      title: "Партнёрская программа — 100% вашей комиссии",
+      subtitle: "+ 0.2% бонус на каждую сделку",
       description:
         "Эксклюзивная программа для опытных фриланс-брокеров, работающих с русскоязычными клиентами в Дубае",
-      cta: "Стать партнёром → Зарабатывать больше",
     },
     LyschorGroup: {
       title: { part1: "Часть", group: "Lyschor Group" },
@@ -385,7 +390,7 @@ const translations = {
           "Офисы: Турция • Индонезия • Эстония • Польша • ОАЭ • Румыния • Кипр • Москва • Санкт-Петербург",
       },
       description:
-        "Сильная внутренняя юридическая команда • Глубокая экспертиза в трансграничных сделках • Безупречная репутация с 2007 года",
+        "Сильная внутренняя юридическая команда • Глубокая экспертиза в трансграничных структурах •и расчётах Безупречная деловая репутация с 2007 года",
     },
     Navbar: {
       rubPayment: "Оплата в рублях",
@@ -396,12 +401,12 @@ const translations = {
       cta: "100% комиссия",
     },
     PaymentInfographic: {
-      title: "Как работает легальная оплата в рублях",
-      step1: "Покупатель из РФ\nРублёвый счёт",
-      step2: "Агентский договор\n(эскроу)",
+      title: "Как работает легальный платёж в рублях (RUB)",
+      step1: "Покупатель из России\nРублёвый счёт",
+      step2: "Агентство / Эскроу-договор",
       step3: "Lyschor Real Estate\nРублёвый счёт",
-      step4: "Оплата застройщику/продавцу\nв дирхамах (AED)",
-      step5: "Получение\nTitle Deed",
+      step4: "Оплата в дирхамах (AED)\nзастройщику / продавцу",
+      step5: "Выдача тайтл-дида\n(свидетельства о собственности)",
     },
     PropertyShowcase: {
       title: "Рекомендуемые объекты",
@@ -414,11 +419,12 @@ const translations = {
         highlight: "Только для покупателей из РФ",
       },
       howItWorks: {
-        title: "Как это работает",
+        title: "Как работает платёж",
         step1: "Покупатель переводит рубли со своего счёта в РФ",
-        step2: "Деньги поступают по агентскому договору (эскроу)",
+        step2:
+          "Деньги поступают абсолютно легально по договору агентирования или эскроу.",
         step3:
-          "Мы оплачиваем застройщику или продавцу в дирхамах стандартными методами ОАЭ",
+          "Мы переводим дирхамы (AED) застройщику или продавцу через банки ОАЭ.",
       },
       advantages: {
         title: "Преимущества",
@@ -492,10 +498,10 @@ const translations = {
     },
     FreelanceBrokers: {
       hero: {
-        title: "Зарабатывайте 100% комиссии",
-        subtitle: "+ 0.2% бонус",
+        title: "Партнёрская программа — 100% вашей комиссии",
+        subtitle: "",
         description:
-          "Самая щедрая партнёрская программа для фриланс-брокеров в Дубае",
+          "Эксклюзивная программа для опытных фриланс-брокеров, работающих с русскоязычными клиентами",
         cta: "Стать партнёром сегодня",
       },
       conditions: {

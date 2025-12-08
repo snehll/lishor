@@ -15,7 +15,7 @@ export default function OfferAgencies() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-center max-w-4xl mx-auto">
+        className="text-center max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">{t.title}</h2>
         <p className="text-xl mb-8 leading-relaxed">{t.description}</p>
         <Link

@@ -21,7 +21,12 @@ export default function PaymentInfographic() {
         {t.title}
       </motion.h2>
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 flex-wrap">
+      <div
+        className={
+          language === "en"
+            ? "flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 flex-wrap"
+            : "flex flex-col md:flex-row items-center justify-center gap-8 md:gap-1 flex-wrap"
+        }>
         {steps.map((step, i) => (
           <motion.div
             key={i}
@@ -34,7 +39,7 @@ export default function PaymentInfographic() {
               <div className="bg-amber-500 w-24 h-24 rounded-full flex items-center justify-center text-4xl font-bold text-black shadow-xl">
                 {i + 1}
               </div>
-              <p className="mt-6 text-lg max-w-[200px] whitespace-pre-line font-medium">
+              <p className="mt-6 text-[14px] max-w-[200px] whitespace-pre-line font-medium">
                 {step}
               </p>
             </div>

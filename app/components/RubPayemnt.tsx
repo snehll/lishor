@@ -34,15 +34,15 @@ export default function RubPayment() {
               {t.howItWorks.title}
             </h3>
             <ol className="space-y-4 text-lg">
-              <li className="flex gap-4">
+              <li className="flex gap-4 text-start">
                 <span className="text-amber-500 font-bold">1</span>{" "}
                 {t.howItWorks.step1}
               </li>
-              <li className="flex gap-4">
+              <li className="flex gap-4 text-start">
                 <span className="text-amber-500 font-bold">2</span>{" "}
                 {t.howItWorks.step2}
               </li>
-              <li className="flex gap-4">
+              <li className="flex gap-4 text-start">
                 <span className="text-amber-500 font-bold">3</span>{" "}
                 {t.howItWorks.step3}
               </li>

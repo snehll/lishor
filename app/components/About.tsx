@@ -30,6 +30,8 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="space-y-6 text-lg leading-relaxed">
             <p>
+              <span className="font-medium">{t.paragraph1.title}</span>
+              <br />
               {t.paragraph1.part1}
               <span className="text-amber-500 font-bold">
                 {" "}
@@ -43,9 +45,10 @@ export default function About() {
               {t.paragraph1.activities}.
             </p>
             <p>
-              {t.paragraph2.part1} <strong>{t.paragraph2.group}</strong> —{" "}
-              {t.paragraph2.experience}, {t.paragraph2.offices},{" "}
-              {t.paragraph2.team}, {t.paragraph2.expertise}.
+              <strong>{t.paragraph2.part1}</strong>
+              {t.paragraph2.experience}
+              <strong> {t.paragraph2.group}</strong>
+              {t.paragraph2.offices}
             </p>
           </motion.div>
 
