@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Base CSS Variables (Light Mode Default) */
+:root {
+  --background: #faf7f2;
+  /* Light ivory */
+  --foreground: #1a1a1a;
+  /* Dark text */
+  --card: #ffffff;
+  /* Card backgrounds */
+  --card-foreground: #1a1a1a;
+  /* Card text */
+}
+
+/* Dark Mode Overrides (applied when .dark class is on <html>) */
+.dark {
+  --background: #0a0a0a;
+  /* Deep charcoal */
+  --foreground: #ededed;
+  /* Light text */
+  --card: #111111;
+  /* Dark cards */
+  --card-foreground: #ededed;
+  /* Light card text */
+}
+
+/* Auto-detect System Preference */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --card: #111111;
+    --card-foreground: #ededed;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  transition: background 0.4s ease, color 0.4s ease;
+  font-family: 'Geist', system-ui, sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-amber-500 hover:bg-amber-600 text-black font-bold px-8 py-5 rounded-xl transition-all duration-300 shadow-lg hover:shadow-amber-500/30;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white hover:bg-white hover:text-black font-bold px-8 py-5 rounded-xl transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply py-24 px-6 max-w-7xl mx-auto;
+  }
+
+  /* Hero overlay for better contrast */
+  .hero-overlay {
+    @apply bg-black/50 dark:bg-black/60;
+  }
+}
+
+/* Consistent Spacing */
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border: none;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Logo position fix */
+.navbar-logo {
+  position: relative;
+  top: 0;
+  margin-bottom: 0;
+}

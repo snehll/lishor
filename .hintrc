@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/forms": "off",
+    "axe/name-role-value": "off",
+    "disown-opener": "off",
+    "no-inline-styles": "off",
+    "apple-touch-icons": "off"
+  }
+}
